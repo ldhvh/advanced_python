@@ -20,3 +20,25 @@ def season_events(n):
         print ( "You need to enter the real number of the month" )
 season_events(int(input("enter the month")))
 #task3
+def check_pass(pswd):
+    ch = ['*', '-', '#']
+    isPerfect = True
+    if len(pswd)!=8:
+        print('password has to be 8 characters')
+        isPerfect=False
+    if not any(char.isupper() for char in pswd):
+        print('password has to have uppercase letters')
+        isPerfect=False
+    if not any(char.islower() for char in pswd):
+        print('password has to have lowercase letters')
+        isPerfect=False
+    if not any(char.isdigit() for char in pswd):
+        print('password has to have at least one number')
+        isPerfect=False
+    if not any(char in ch for char in pswd):
+        print('password has to have symbols like *-#')
+        isPerfect=False
+    if isPerfect:
+        print('The password is perfect')
+password = input("enter your password:")
+check_pass(password)

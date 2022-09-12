@@ -77,8 +77,8 @@ z=3
 res=(math.fabs(math.log(x**3))+math.exp(2*x))/(x+3.4)-(math.pow((1/(math.tan(3/(x*y*z)))),3))
 print(str(round(res,2)))
 #2(area)
-a=int(input())
-b=int(input())
+a=int(input("enter a: "))
+b=int(input("enter b: "))
 c=math.sqrt((a**2) + (b**2))
 s=(a*b)/2
 p=x+y+c
@@ -86,9 +86,9 @@ print("area is " + str(area))
 print("perimeter is " + str(p))
 
 #3(roots)
-a=float(input())
-b=float(input())
-c=float(input())
+a=float(input("enter a: "))
+b=float(input("enter b: "))
+c=float(input("enter c: "))
 d=(b**2)-4*a*c
 if d>0:
     x1=((-b)+math.sqrt(d))/(2*a)
@@ -101,26 +101,20 @@ elif d==0:
 else:
     print("no roots")
 #4(areas)
-print ( "1-rectangle, 2-triangle, 3-circle" ) 
-figure = input ( "Select a shape:" )
+print( "press 1 for rectangle, 2 for circle and 3 for triangle" ) 
+figure=input()
 
-if figure == '1' : 
-    print ( "The lengths of the sides of the rectangle:" ) 
-    a = float (input ( "a =" )) 
-    b = float (input ( "b =" )) 
-    print ( "Area:% .2f" % (a * b)) 
-elif figure == '2' : 
-    print ( "The lengths of the sides of the triangle:" ) 
-    a = float (input ( "a =" )) 
-    b = float (input ( "b =" )) 
-    c = float (input ( "c =")) 
-    p = (a + b + c) / 2 
-    from math import sqrt 
-    s = sqrt (p * (p - a) * (p - b) * (p - c))
-    print ( "Area:% .2f" % s) 
-elif figure == '3' : 
-    r = float (input ( "Circle radius R =" )) 
-    from math import pi 
-    print ( "Area:% .2f" % (pi * r ** 2 )) 
-else : 
-    print ( "Input error" )
+if figure=='1':
+    a=float(input("a = ")) 
+    b=float(input("b = ")) 
+    print("area is",str(round(a*b,2))) 
+elif figure=='2' : 
+    r=float(input("r = "))
+    print("area is",str(round(pi * r ** 2,2))) 
+elif figure=='3' : 
+    a=float(input("a = ")) 
+    b=float(input("b = ")) 
+    c=float(input("c = ")) 
+    p=(a + b + c)/2 
+    s=sqrt(p*(p-a)*(p-b)*(p-c))
+    print("area is",str(round(s,2)))
