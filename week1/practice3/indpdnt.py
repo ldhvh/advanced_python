@@ -7,8 +7,7 @@ def is_alive(health):
 is_alive(int(input()))
 #task2
 def season_events(n):
-    months = [[12 , 1 , 2], [3 , 4 , 5],
-             [6 , 7 , 8], [9 , 10 , 11]]
+    months=[[12,1,2],[3,4,5],[6,7,8],[9,10,11]]
     if n in months[0] :
         print ( "You were born in Winter. White snow fell outside the window" )
     elif n in months[1] :
