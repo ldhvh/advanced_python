@@ -4,7 +4,7 @@ def is_alive(health):
         print("False")
     else:
         print("True")
-is_alive(int(input()))
+is_alive(int(input("Enter health rate: ")))
 #task2
 def season_events(n):
     months=[[12,1,2],[3,4,5],[6,7,8],[9,10,11]]
@@ -18,7 +18,7 @@ def season_events(n):
         print ( "You were born in Autumn. The harvest was incredible" )
     else :
         print ( "You need to enter the real number of the month" )
-season_events(int(input("enter the month")))
+season_events(int(input("enter the number of the month: ")))
 #task3
 def check_pass(pswd):
     ch = ['*', '-', '#']

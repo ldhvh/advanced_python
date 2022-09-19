@@ -9,7 +9,9 @@ for i in range(n):
 #ex2
 x=0
 t=0
+print()
 n=int(input("Enter total count of numbers :"))
+print("Enter the sequence one by one")
 list = []
 for i in range(0, n):
     list.append(int(input()))

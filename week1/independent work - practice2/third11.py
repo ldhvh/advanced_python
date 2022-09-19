@@ -4,12 +4,13 @@ a=int(input("enter a "))
 b=int(input("enter b "))
 h=int(input("enter h "))
 s=(((a**(2)+b)*h)/(2*(a-b)+4))
-print(str(round(s,2)))
+print("area is ",str(round(s,2)))
 #2
 x=int(input("enter x "))
 y=int(input("enter y "))
 h=math.sqrt(math.cos(2*y)+math.sin(4*y)+math.sqrt(math.e**(x)+math.e**(-x)))/((math.pow(math.e**(-x)+math.e**(x),3)*(math.pow(math.sin(4*y)+math.cos(2*y)-2,2))))
-print(str(round(h,2)))
+print("H is ",str(round(h,2)))
+print()
 #3(1)
 x=2
 y=1
@@ -76,14 +77,15 @@ y=1
 z=3
 res=(math.fabs(math.log(x**3))+math.exp(2*x))/(x+3.4)-(math.pow((1/(math.tan(3/(x*y*z)))),3))
 print(str(round(res,2)))
+print()
 #2(area)
 a=int(input("enter a: "))
 b=int(input("enter b: "))
 c=math.sqrt((a**2) + (b**2))
 s=(a*b)/2
-p=x+y+c
-print("area is " + str(area))
-print("perimeter is " + str(p))
+p=a+b+c
+print("area is {0:.2f}".format(s))
+print("perimeter is {0:.2f}".format(p))
 
 #3(roots)
 a=float(input("enter a: "))
@@ -93,11 +95,11 @@ d=(b**2)-4*a*c
 if d>0:
     x1=((-b)+math.sqrt(d))/(2*a)
     x2=((-b)-math.sqrt(d))/(2*a)
-    print("root one is " + str(x1))
-    print("root two is " + str(x2))
+    print("root one is ",x1)
+    print("root two is ",x2)
 elif d==0:
     x1=(-b)/(2*a)
-    print("root is " + str(x1))
+    print("root is ",x1)
 else:
     print("no roots")
 #4(areas)
@@ -105,16 +107,16 @@ print( "press 1 for rectangle, 2 for circle and 3 for triangle" )
 figure=input()
 
 if figure=='1':
-    a=float(input("a = ")) 
-    b=float(input("b = ")) 
-    print("area is",str(round(a*b,2))) 
+    a=float(input("a = "))
+    b=float(input("b = "))
+    print("area is",round(a*b,2))
 elif figure=='2' : 
     r=float(input("r = "))
-    print("area is",str(round(pi * r ** 2,2))) 
+    print("area is",round(math.pi * r ** 2,2))
 elif figure=='3' : 
-    a=float(input("a = ")) 
-    b=float(input("b = ")) 
-    c=float(input("c = ")) 
+    a=float(input("a = "))
+    b=float(input("b = "))
+    c=float(input("c = "))
     p=(a + b + c)/2 
-    s=sqrt(p*(p-a)*(p-b)*(p-c))
-    print("area is",str(round(s,2)))
+    s=math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print("area is",round(s,2))
