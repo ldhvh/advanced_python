@@ -11,9 +11,9 @@ x=3
 def pr():
     print(x)
 pr()
-def pa(a)
+def pr(a):
     print(a)
-pa(a)
+pr(x)
 x=3
 print('Starting value: ',x)
 def pr():
@@ -44,7 +44,7 @@ for i in range(3):
 for i in range(3):
     print('Area of ',i,'-sided triangle')
 if A[0]==A[1]:
-    if A[0}==A[2]:
+    if A[0]==A[2]:
         print('Triangles are equal')
 else: print('Triangles are not equal')
 #task0.2
