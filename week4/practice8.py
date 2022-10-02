@@ -2,15 +2,23 @@ import math
 import sys
 print()
 #task1.1
-arr=[[0,0,0],[0,0,0],[0,0,0]]
-d=0
-print("Enter the elements of the array:")
-for i in range(3):
-    for j in range(3):
-        arr[i][j] = int(input())
-     if i>j:
-             d+=arr[i][j]
-print("The sum of below diagonal elements is:",bd)
+n=3
+x=[]
+for i in range(n):
+    y=[]
+    for j in range(n):
+        print('Enter the elements of the array:')
+        y.append(int(input()))
+    x.append(b)
+z = 0
+o = 0
+for i in range(n):
+    for j in range(i + 1, n):
+        if x[i][j] > 0:
+            o += a[i][j]
+            z+= 1
+print("Num of Positive: " , z)
+print("Sum: " , o)
 #task1.2
 print()
 m=100
