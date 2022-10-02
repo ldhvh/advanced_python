@@ -21,6 +21,7 @@ print(rect1.square())
 rect1.annul_side()
 print(rect1.square())
 #task2
+print()
 class Name:
     def __init__(self, fname,lname):
         self.fname=fname.lower().title()
@@ -33,6 +34,7 @@ print(name1.lname)
 print(name1.full_name)
 print(name1.initials)
 #task3
+print()
 class Calculator:
     def __init__(self,n1,n2):
         self.n1=n1
