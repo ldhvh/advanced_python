@@ -6,7 +6,7 @@ image_dir = os.listdir('testdir')
 for image in image_dir:
     im = Image.open('testdir/' + image)
     width, height = im.size
-    new_width = 1000
+    new_width = 700
     ratio = new_width/width
     new_height = int(height * ratio)
     new_image = im.resize((new_width, new_height))
